@@ -25,7 +25,6 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        apt-get install python3-dev
         pip install poetry codecov
         make init
     - name: Lint with flake8
