@@ -12,13 +12,37 @@
 
 Flake8 linter for if statements
 
+
+### Checks:
+
+
+* IFSTMT001: Use one liner so as not to repeat assignment to the same variable
+
+e.g: 
+
+Bad:
+
+```python
+if x == 1:
+    y = 10
+else:
+    y = 11
+```
+
+Good:
+
+```python
+y = 10 if x == 1 else 11
+```
+
+
 ## Installation
 
     pip install flake8-if-statements
 
 ## Usage
 
-...
+`flake8 <your code>`
 
 ## For developers
 
