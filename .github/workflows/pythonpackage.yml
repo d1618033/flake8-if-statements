@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.6, 3.7, 3.8]
+        python-version: [3.6, 3.7]
 
     steps:
     - uses: actions/checkout@v2
@@ -25,11 +25,13 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        pip install poetry
+        apt-get install python3-dev
+        pip install poetry codecov
         make init
     - name: Lint with flake8
       run: |
         make lint
     - name: Test with pytest
       run: |
-        make testreadme
+        make test
+        codecov
