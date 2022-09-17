@@ -16,7 +16,7 @@ Flake8 linter for if statements
 ### Checks:
 
 
-* IFSTMT001: Use one liner so as not to repeat assignment to the same variable
+* IFS001: Use one liner so as not to repeat assignment to the same variable
 
 e.g: 
 
@@ -73,7 +73,7 @@ MIT
 Unreleased
 -----
 
-* ...
+* Changed IFSTMT to IFS to comply with flake8
 
 0.1.0 - 2020-03-14
 -----

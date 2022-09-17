@@ -31,5 +31,5 @@ def test_actual_code(tmpdir):
     )
     assert output == (
         f'{tmpdir}/code.py:3:1: '
-        f'IFSTMT001 Use one liner if statement so as not to repeat the assignment to y'
+        f'IFS001 Use one liner if statement so as not to repeat the assignment to y'
     )
