@@ -74,6 +74,7 @@ Unreleased
 -----
 
 * Changed IFSTMT to IFS to comply with flake8
+* Remove python3.6 support
 
 0.1.0 - 2020-03-14
 -----
