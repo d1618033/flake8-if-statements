@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flake8-if-statements"
-version = "0.1.0"
+version = "1.0.0"
 description = "Flake8 linter for if statements"
 authors = ["David S <d1618033@gmail.com>"]
 license = "MIT"

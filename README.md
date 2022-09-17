@@ -73,6 +73,11 @@ MIT
 Unreleased
 -----
 
+* ...
+
+1.0.0 - 2022-09-17
+-----
+
 * Changed IFSTMT to IFS to comply with flake8
 * Remove python3.6 support
 
