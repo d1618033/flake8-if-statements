@@ -11,9 +11,9 @@ test:
 	$(BIN)pytest --verbosity=2 --showlocals --strict --log-level=DEBUG --cov=$(CODE) $(args)
 
 lint:
-	$(BIN)flake8 --jobs 4 --statistics --show-source $(CODE) tests
+	$(BIN)flake8 --jobs 4 --statistics --show-source $(CODE)
 	$(BIN)pylint --jobs 4 --rcfile=setup.cfg $(CODE)
-	$(BIN)mypy $(CODE) tests
+	$(BIN)mypy $(CODE)
 	$(BIN)black --py36 --skip-string-normalization --line-length=79 --check $(CODE) tests
 	$(BIN)pytest --dead-fixtures --dup-fixtures
 
