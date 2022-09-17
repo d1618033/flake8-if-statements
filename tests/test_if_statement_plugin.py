@@ -33,4 +33,4 @@ def test_actual_code(tmpdir):
         f'{tmpdir}/code.py:3:1: '
         f'IFS001 Use one liner if statement so as not to repeat the assignment to y'
     )
-    assert output[:len(expected)] == expected
+    assert output[: len(expected)] == expected
