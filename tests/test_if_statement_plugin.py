@@ -29,7 +29,8 @@ def test_actual_code(tmpdir):
         .stdout.decode()
         .strip()
     )
-    assert output == (
+    expected = (
         f'{tmpdir}/code.py:3:1: '
-        f'IFSTMT001 Use one liner if statement so as not to repeat the assignment to y'
+        f'IFS001 Use one liner if statement so as not to repeat the assignment to y'
     )
+    assert output[: len(expected)] == expected

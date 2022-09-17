@@ -10,10 +10,10 @@ homepage = "https://pypi.org/project/flake8-if-statements"
 keywords = []
 
 [tool.poetry.plugins."flake8.extension"]
-IFSTMT = 'flake8_if_statements.plugin:IfStatementsPlugin'
+IFS = 'flake8_if_statements.plugin:IfStatementsPlugin'
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.7"
 flake8-plugin-utils = "^1.2.0"
 astor = "^0.8.1"
 
